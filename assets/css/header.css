@@ -167,12 +167,10 @@
 
   #header__nav.active .header__menu {
     visibility: visible;
-    height: 50vh;
+    height: 50vgh;
     overflow-y: auto;
   }
 
-  .header__menu li {
-  }
   .hamburguer {
     display: block;
     border-top: 3px solid;
