@@ -5,13 +5,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Escritório de Advocacia Flavio Maciel</title>
     <meta name="description" content="Escritório de Advocacia especializado em Rio Grande. Atendimento 24 horas. Direito civil. Direito criminal. Direito previdenciário. Fim da união estável.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Kanit:wght@300;500&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <header class="header__bg">
+        <div class="header">
+            <div class="header__img">
+                <a href="./">
+                    <img src="./assets/img/icon/logo.svg" alt="Logo escritório de Advocacia Flavio Maciel">
+                </a>
+                <p>Escritório de Advocacia Flavio Maciel</p>
+            </div>
+            <div class="header__infos">
+                <div class="header__infos-dados">
+                    <a href="https://www.google.com/maps/place/Fl%C3%A1vio+Maciel+Advocacia-+PLANT%C3%83O+24+HORAS/@-32.0375071,-52.1012629,17z/data=!3m1!4b1!4m5!3m4!1s0x95119d415dfe4fbb:0x710c7b6b0df3ea1e!8m2!3d-32.0375117!4d-52.0990742" target="_blank">
+                        <img style="margin-top: 8px" src="./assets/img/icon/map.svg" alt="Ícone de um mapa">
+                        <p>Rio Grande - RS | General Neto, 485</p>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=555399754688&text=Ol%C3%A1%20dr.%20Flavio,%20vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20escrit%C3%B3rio" target="_blank">
+                        <img src="./assets/img/icon/telephone.svg" alt="">
+                        <p>(53) 9975-4688</p>
+                    </a>
+                </div>
+                <div class="header__infos-nav">
+                    <nav aria-label="primaria" id="header__nav">
+                        <button id="btn__mobile" aria-controls="header__menu" aria-expanded="false" aria-haspopup="true" aria-label="Abrir Menu">Menu
+                            <span class="hamburguer"></span>
+                        </button>
+                        <ul class="header__menu" role="menu">
+                            <li><a href="" class="header__nav-item">Áreas de atuação<span></span></a></li>
+                            <li><a href="" class="header__nav-item">Nossa equipe<span></span></a></li>
+                            <li><a href="" class="header__nav-item">Contato<span></span></a></li>
+                            <li><a href="" class="header__nav-item">Fale conosco<span></span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <article class="carousel">
+            <button class="carousel__btn carousel__btn-ant" data-ant aria-label="Botão de voltar"></button>
+            <button class="carousel__btn carousel__btn-prox" data-prox aria-label="Botão de avançar"></button>
+
+            <ul class="carousel__lista-prod" data-lista-prod>
+                <a href="#" class="carousel__prod">
+                    <li class="carousel__img-container">
+                        <div class="carousel__txt">
+                            <h3> Advogados especializados</h3>
+                            <h1 class="text__destaque">Advocacia Paaaia</h1>
+                        </div>
+                        <img src="assets/img/bg.png" alt="" class="carousel__img">
+                    </li>
+                </a>
+                <a href="#" class="carousel__prod">
+                    <li class="carousel__img-container">
+                        <div class="carousel__txt">
+                            <h3> Advogados especializados</h3>
+                            <h1 class="text__destaque">Advocacia Paaaia</h1>
+                        </div>
+                        <img src="assets/img/1.png" alt="" class="carousel__img">
+                    </li>
+                </a>
+                <a href="#" class="carousel__prod">
+                    <li class="carousel__img-container">
+                        <div class="carousel__txt">
+                            <h3> Advogados especializados</h3>
+                            <h1 class="text__destaque">Advocacia Paaaia</h1>
+                        </div>
+                        <img src="assets/img/2.png" alt="" class="carousel__img">
+                    </li>
+                </a>
+                <a href="#" class="carousel__prod">
+                    <li class="carousel__img-container">
+                        <div class="carousel__txt">
+                            <h3> Advogados especializados</h3>
+                            <h1 class="text__destaque">Advocacia Paaaia</h1>
+                        </div>
+                        <img src="assets/img/3.png" alt="" class="carousel__img">
+                    </li>
+                </a>
+            </ul>
+            <div class="carousel__indicadores" data-nav>
+                <button class="carousel__indicador carousel__indicador-ativo" data-indicador="0" aria-label="Slide 1"></button>
+                <button class="carousel__indicador" data-indicador="1" aria-label="Slide 2"></button>
+                <button class="carousel__indicador" data-indicador="2" aria-label="Slide 3"></button>
+                <button class="carousel__indicador" data-indicador="3" aria-label="Slide 4"></button>
+            </div>
+        </article>
+
+        <div class="cta__btn">
+            <a href="" class="btn__pri" target="_blank">chamar no whatsapp</a>
+            <a href="" class="btn__sec">veja mais</a>
+        </div>
+
+        <div class="flutuar" id="div-fixa" data-shrink="yes">
+            <a href="https://api.whatsapp.com/send?phone=555399754688&text=Ol%C3%A1%20dr.%20Flavio,%20vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20seu%20escrit%C3%B3rio" target="_blank">
+
+                <div class="flex-itens">
+                    <span>Converse conosco</span>
+                    <img src="./assets/img/icon/Whatsapp.svg" alt="Botão para chamar no Whatsapp">
+
+                </div>
+
+            </a>
+
+        </div>
+    </main>
+
+
+    <script src="script.js" type="module"></script>
+    <script src="wpp-shrink.js"></script>
+    <script src="menu.js"></script>
+
 </body>
 
 </html>
