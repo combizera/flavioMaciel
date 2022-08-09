@@ -1,0 +1,139 @@
+.areas {
+  padding: 4rem 80px;
+  background: url("./../img/icon/balance.svg") no-repeat top 16px right 16px;
+  background-color: var(--am1);
+}
+
+.areas__tit {
+  position: relative;
+}
+
+.areas h2 {
+  margin: 0;
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: var(--az1);
+  text-align: center;
+  cursor: default;
+}
+
+.areas h2:hover .detalhe-bot {
+  transform: skew(40deg);
+  width: 150px;
+}
+
+.areas h2:hover .detalhe-top {
+  transform: skew(40deg);
+  width: 150px;
+}
+
+.detalhe-top {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  bottom: 8px;
+  right: 27%;
+  background-color: var(--az1);
+  transition: 0.4s;
+}
+
+.detalhe-bot {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  top: 0px;
+  left: 28%;
+  background-color: var(--az1);
+  transition: 0.4s;
+}
+
+/* .expandir {
+  animation-name: expandir;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes expandir {
+  from {
+    transform: skew(00deg);
+    width: 50px;
+  }
+  to {
+    transform: skew(40deg);
+    width: 150px;
+  }
+} */
+
+.areas__secoes ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 4rem 0px;
+}
+
+.areas__secoes img {
+  max-width: 100%;
+  border-radius: 05px;
+  object-fit: cover;
+}
+
+.areas__secoes-bg {
+  transition: 0.3s;
+  position: relative;
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-mask-image: linear-gradient(#001 0%, black 100%); */
+}
+
+.areas__secoes-bg:hover {
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: rgb(209, 182, 86);
+  -webkit-mask-image: linear-gradient(#d1b656 0%, #d19156 100%); */
+  /* background: linear-gradient(
+    180deg,
+    rgba(209, 182, 86, 0.8) 0%,
+    rgba(209, 145, 86, 0.8) 100%
+  ); */
+}
+
+.capsula {
+  position: absolute;
+  top: 0;
+}
+
+.capsula h4 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 130%px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c0);
+  position: absolute;
+}
+
+.btn__areas-cta {
+  background: #353544;
+  box-shadow: 0px 21px 80px rgba(53, 53, 68, 0.18),
+    0px 6.33089px 24.1177px rgba(53, 53, 68, 0.117286),
+    0px 2.62953px 10.0172px rgba(53, 53, 68, 0.09),
+    0px 0.951048px 3.62304px rgba(53, 53, 68, 0.062714);
+  border-radius: 5px;
+  padding: 8px 22px;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  color: var(--c0);
+  position: absolute;
+  bottom: 100%;
+}
