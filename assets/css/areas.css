@@ -51,29 +51,15 @@
   transition: 0.4s;
 }
 
-/* .expandir {
-  animation-name: expandir;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-}
-
-@keyframes expandir {
-  from {
-    transform: skew(00deg);
-    width: 50px;
-  }
-  to {
-    transform: skew(40deg);
-    width: 150px;
-  }
-} */
-
 .areas__secoes ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin: 4rem 0px;
+}
+
+.areas__secoes li:nth-child(n + 5) {
+  margin-top: 0.8rem;
 }
 
 .areas__secoes img {
@@ -85,39 +71,47 @@
 .areas__secoes-bg {
   transition: 0.3s;
   position: relative;
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
-  -webkit-mask-image: linear-gradient(#001 0%, black 100%); */
+  width: 100%;
+  height: 180px;
 }
 
-.areas__secoes-bg:hover {
-  /* -webkit-filter: grayscale(100%);
+.areas__secoes li:hover {
+  background-image: linear-gradient(45deg, #d1b656 0%, #bd6532 100%);
+  border-radius: 5px;
+}
+
+.areas__secoes-bg:hover img {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 20%, #fff 100%);
+  transition: 1s ease;
+  border-radius: 5px;
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: rgb(209, 182, 86);
-  -webkit-mask-image: linear-gradient(#d1b656 0%, #d19156 100%); */
-  /* background: linear-gradient(
-    180deg,
-    rgba(209, 182, 86, 0.8) 0%,
-    rgba(209, 145, 86, 0.8) 100%
-  ); */
+  filter: gray;
 }
 
 .capsula {
   position: absolute;
   top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .capsula h4 {
   font-family: "Kanit", sans-serif;
   font-weight: 300;
   font-size: 1.4rem;
-  line-height: 130%px;
+  line-height: 130%;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--c0);
   position: absolute;
+  padding: 0px 2rem;
+
+  margin-top: 30%;
+  transition: 0.4s;
 }
 
 .btn__areas-cta {
@@ -135,5 +129,17 @@
 
   color: var(--c0);
   position: absolute;
-  bottom: 100%;
+  top: 0;
+  transform: translateY(-50%);
+  margin-top: 55%;
+  z-index: 50;
+  display: none;
+}
+
+.areas__secoes-bg:hover .btn__areas-cta {
+  display: inline-flex;
+}
+
+.areas__secoes-bg:hover .capsula h4 {
+  margin-top: 12%;
 }
