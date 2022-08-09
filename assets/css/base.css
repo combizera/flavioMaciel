@@ -104,3 +104,13 @@ a {
     filter: brightness(120%);
   }
 }
+
+/* mobile */
+@media (max-width: 800px) {
+  #div-fixa {
+    bottom: 40px;
+    right: 20px;
+    transition: 0.5s all;
+    z-index: 1000;
+  }
+}
