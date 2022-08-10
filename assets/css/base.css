@@ -11,13 +11,18 @@ header,
 body,
 img,
 ul,
+h4,
 h3,
-h1 {
+h2,
+h1,
+p {
   margin: 0;
   padding: 0px;
 }
 h1,
-h3 {
+h2,
+h3,
+h4 {
   font-size: inherit;
   margin: 0;
 }
