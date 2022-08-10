@@ -71,11 +71,17 @@
   line-height: 1.5rem;
 }
 
+.adv__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .adv__oab {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
 }
 
 .adv__oab a {
@@ -93,15 +99,8 @@
   width: 32px;
   height: 32px;
 }
-
-.adv__cta {
-  margin-top: 2rem;
-}
-
-.adv__txt {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#flavio {
+  margin-bottom: 2rem;
 }
 
 #flavio .detalhe-top {
@@ -118,4 +117,60 @@
 
 #gabi .detalhe-bot {
   left: 32%;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  .sobre__grid {
+    padding: 4rem 40px;
+    gap: 0rem;
+    background: url("./../img/icon/hammer.svg") no-repeat top 2rem left 0px;
+  }
+
+  .sobre__img {
+    display: none;
+  }
+
+  .sobre__subtit span {
+    width: 50px;
+  }
+
+  .adv__img {
+    grid-row: 1;
+  }
+
+  .adv__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 4rem 15%;
+    gap: 2rem;
+  }
+
+  .adv__grid p {
+    line-height: 1.5rem;
+  }
+
+  .adv__txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-row: 2;
+  }
+
+  #flavio .detalhe-top {
+    left: 65%;
+  }
+
+  #flavio .detalhe-bot {
+    left: 10%;
+  }
+
+  #gabi .detalhe-top {
+    left: 73%;
+  }
+
+  #gabi .detalhe-bot {
+    left: 5%;
+  }
 }
