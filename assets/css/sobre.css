@@ -1,0 +1,121 @@
+.sobre {
+  background-color: #1d1e1f;
+}
+
+.sobre__grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 8rem 15%;
+  gap: 4rem;
+  background: url("./../img/icon/hammer.svg") no-repeat top 10rem left 0px;
+}
+
+.sobre p {
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--c2);
+  font-family: "Kanit", sans-serif;
+}
+
+.sobre__subtit {
+  font-family: "Amiri", serif;
+  font-size: 1.125rem;
+  line-height: 120%;
+
+  color: var(--c2);
+  position: relative;
+  display: flex;
+}
+
+.sobre__subtit span {
+  width: 100px;
+  height: 3px;
+  background: var(--am1);
+  display: flex;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.sobre__tit {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 5rem;
+  font-family: "Kanit", sans-serif;
+
+  color: var(--am1);
+}
+
+#sobre h2 {
+  color: var(--am1);
+}
+
+#sobre span {
+  background-color: var(--am1);
+}
+
+.adv__img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.adv__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem 15%;
+  gap: 4rem;
+}
+
+.adv__grid p {
+  line-height: 1.5rem;
+}
+
+.adv__oab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.adv__oab a {
+  font-weight: 700 !important;
+  color: var(--c2);
+  transition: 0.3s;
+  font-family: "Kanit", sans-serif;
+}
+
+.adv__oab a:hover {
+  color: var(--c0);
+}
+
+.adv__oab img {
+  width: 32px;
+  height: 32px;
+}
+
+.adv__cta {
+  margin-top: 2rem;
+}
+
+.adv__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#flavio .detalhe-top {
+  right: 34%;
+}
+
+#flavio .detalhe-bot {
+  left: 34%;
+}
+
+#gabi .detalhe-top {
+  right: 32%;
+}
+
+#gabi .detalhe-bot {
+  left: 32%;
+}
