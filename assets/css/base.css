@@ -1,13 +1,18 @@
 :root {
   --az1: #353544;
   --az1Tr: #35354447;
-  --az2: #30303d;
+  --az2: #282835;
   --am1: #ecd087;
   --am2: #ede0bf;
   --c0: #fff;
   --c1: #e9e9e9;
   --c2: #b0afae;
   --c3: #5b5b5b;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header,
@@ -36,7 +41,6 @@ ul {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 20rem;
 }
 
 a {
