@@ -95,7 +95,6 @@
   border-radius: 5px;
   width: 70%;
 }
-
 .plantao {
   background-color: var(--az2);
   text-align: center;
@@ -104,9 +103,7 @@
   font-weight: 300;
   line-height: 1.25rem;
 }
-
 .plantao a {
-  color: var(--c0);
   display: flex;
   align-items: center;
   justify-content: center;
