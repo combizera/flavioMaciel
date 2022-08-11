@@ -1,4 +1,4 @@
-.feeback-bg {
+.feedback-bg {
   padding: 4rem 0px;
   background-color: var(--am1);
 }
@@ -80,4 +80,24 @@
 
 .depo-est {
   margin-top: 1rem;
+}
+
+/* mobile */
+@media (max-width: 800px) {
+  .feedback__grid {
+    grid-template-columns: 1fr;
+    padding: 4rem 40px;
+  }
+
+  #feedback .detalhe-top {
+    left: 65%;
+  }
+
+  #feedback .detalhe-bot {
+    left: 10%;
+  }
+
+  .titulo__desc {
+    padding: 1rem 40px;
+  }
 }
