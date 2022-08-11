@@ -66,6 +66,7 @@
   font-weight: 300;
   gap: 0.5rem;
   font-size: 0.875rem;
+  align-items: center;
 }
 
 .header__menu {
@@ -85,13 +86,13 @@
   background-color: var(--am1);
   content: "";
   position: absolute;
-  transform: rotate(45deg);
+  transform: translateX(-1.8rem) rotate(45deg);
   margin: 10px 0px 0px 12px;
   transition: 0.5s;
 }
 
 .header__menu a:hover span {
-  transform: rotate(0deg);
+  transform: translateX(-1.8rem) rotate(0deg);
 }
 
 #btn__mobile {
@@ -113,10 +114,18 @@
     padding: 16px 20px;
     margin: 0px auto;
     height: auto;
+    height: 100px;
+  }
+
+  .header__img img {
+    display: none;
   }
 
   .header__img p {
-    display: none;
+    display: flex;
+    font-size: 1rem;
+    margin-left: 0rem;
+    line-height: 1;
   }
 
   .header__infos-dados {

@@ -64,6 +64,7 @@
   bottom: 0;
 
   width: 100%;
+  cursor: default;
 }
 
 .carousel__img-container {

@@ -7,10 +7,12 @@ Site que mescla uma landing page com um site institucional. Meu primeiro cliente
 --az1: #353544;
 --az2: #30303D;
 --am1: #ECD087;
+--am2: #EDE0BF;
 --amTrans: #ECD087AA;
 --c0: #fff;
 --c1: #E9E9E9;
 --c2: #B0AFAE;
+--c3: #5b5b5b;
 
 ## Fontes
 

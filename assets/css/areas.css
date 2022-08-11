@@ -73,6 +73,12 @@
   position: relative;
   width: 100%;
   height: 180px;
+
+  border-radius: 5px;
+  box-shadow: 0px 8px 39px rgba(0, 0, 0, 0.32),
+    0px 2.41177px 11.7574px rgba(0, 0, 0, 0.208508),
+    0px 1.00172px 4.88341px rgba(0, 0, 0, 0.16),
+    0px 0.362304px 1.76623px rgba(0, 0, 0, 0.111492);
 }
 
 .areas__secoes li:hover {
@@ -152,7 +158,6 @@
 
   .areas h2 {
     margin: 0;
-    font-size: 2.5rem;
     line-height: 120%;
   }
 
@@ -172,6 +177,7 @@
 
   .titulo-secao h2 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   .areas__secoes ul {
@@ -197,23 +203,16 @@
   .capsula h4 {
     font-size: 1.25rem;
     letter-spacing: 0.1em;
+    font-weight: bold;
     position: absolute;
-    padding: 0px 2rem;
-    margin-top: 0%;
+    padding: 0px 2.5rem;
+    margin-top: 15%;
   }
 
   .btn__areas-cta {
-    padding: 8px 22px;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-
-    color: var(--c0);
-    position: absolute;
+    padding: 10px 24px;
     top: 1rem;
     transform: translateY(-50%);
-    margin-top: 55%;
     z-index: 50;
     display: flex;
   }

@@ -54,6 +54,16 @@
   background-color: var(--am1);
 }
 
+.sobre__img {
+  box-shadow: -10px 10px #262627;
+  border-radius: 5px;
+}
+
+.adv__img {
+  box-shadow: -10px 10px #262627;
+  border-radius: 5px;
+}
+
 .adv__img img {
   width: 100%;
   object-fit: cover;
